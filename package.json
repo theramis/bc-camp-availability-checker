@@ -1,0 +1,17 @@
+{
+  "name": "bc-camp-availability-checker",
+  "version": "1.0.0",
+  "scripts": {
+    "run": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theramis/bc-camp-availability-checker.git"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.35.1"
+  },
+  "dependencies": {
+    "pushbullet": "^2.4.0"
+  }
+}
