@@ -4,9 +4,9 @@ on:
     branches:
       - main
   workflow_dispatch:
-  schedule:
+  #schedule:
     # every 30 mins
-    - cron:  '*/15 * * * *'
+  #  - cron:  '*/15 * * * *'
 
 jobs:
   checker:
