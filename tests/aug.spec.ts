@@ -27,7 +27,7 @@ async function checkPage(name: string, link: string, page: Page) {
   const wholePage = page.locator("body");
   await expect(wholePage).not.toContainText("No Available Campsites");
 
-  await page.screenshot({ path: "screenshot.png", fullPage: true });
+  await page.screenshot({ path: `${name}.png`, fullPage: true });
   const screenshotFilePath = process.cwd() + "/screenshot.png";
 
   const pushbulletApi = new PushBullet(pushbulletApiKey);
