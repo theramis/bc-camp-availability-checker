@@ -19,6 +19,15 @@ test("Nairn Falls", async ({ page }) => {
   await checkPage("Nairn Falls", "https://camping.bcparks.ca/create-booking/results?resourceLocationId=-2147483564&mapId=-2147483471&searchTabGroupId=0&bookingCategoryId=0&startDate=2023-08-12&endDate=2023-08-13&nights=1&isReserving=true&equipmentId=-32768&subEquipmentId=-32768&partySize=1&filterData=%7B%7D&equipmentCapacity=1", page);
 });
 
+test("Chilliwack Lake", async ({ page }) => {
+  await checkPage("Chilliwack Lake", "https://camping.bcparks.ca/create-booking/results?mapId=-2147483619&searchTabGroupId=0&bookingCategoryId=0&startDate=2023-08-12&endDate=2023-08-13&nights=1&isReserving=true&equipmentId=-32768&subEquipmentId=-32768&partySize=1&filterData=%7B%7D&equipmentCapacity=1&resourceLocationId=-2147483627", page);
+});
+
+
+test("Generic", async ({ page }) => {
+  await checkPage("Generic", "https://camping.bcparks.ca/create-booking/results?mapId=-2147483549&searchTabGroupId=0&bookingCategoryId=0&startDate=2023-08-12&endDate=2023-08-13&nights=1&isReserving=true&equipmentId=-32768&subEquipmentId=-32768&partySize=1&filterData=%7B%7D&equipmentCapacity=1", page);
+});
+
 async function checkPage(name: string, link: string, page: Page) {
   await page.goto(
     link
